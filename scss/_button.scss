@@ -1,0 +1,10 @@
+.btn{
+    font-variant-caps: all-petite-caps;
+    border-radius: 2px;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover{
+        background-color: $thirdColor;
+        color: $secondColor;
+    }
+}

@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 20px;
+  background-color: #d3d3d3;
+  text-align: center;
+}
+
+.btn {
+  font-variant-caps: all-petite-caps;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #161a1d;
+  color: #e5383b;
+}
+
+.scale-items {
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.item-size {
+  width: 20%;
+  height: 10%;
+}
+
+.item-space {
+  margin: 10px;
+}
+
+.text-last-center {
+  text-align-last: center;
+}
