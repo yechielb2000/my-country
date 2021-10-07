@@ -3,6 +3,7 @@ html, body {
   padding: 20px;
   background-color: #d3d3d3;
   text-align: center;
+  font-family: "Source Code Pro", monospace;
 }
 
 .btn {
