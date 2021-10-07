@@ -8,4 +8,4 @@
 
 <img src="iamges\my-coutry-flag.svg" width="220px" alt="&#x1F1EE;&#x1F1F1;">
 
-#### Find about countries !!
+#### Find your country !!
