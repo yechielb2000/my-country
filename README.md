@@ -1,8 +1,7 @@
 
 ## my-country
 
-<img src="https://img.shields.io/badge/project%20name-my--country-orange">
-<img src="https://img.shields.io/github/followers/devs-clan?style=social"> <img src="https://img.shields.io/github/forks/devs-clan/devs-clan-site?style=social"> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/devs-clan/devs-clan-site?style=social">
+<img src="https://img.shields.io/badge/project%20name-my--country-orange"> <img src="https://img.shields.io/github/followers/devs-clan?style=social"> <img src="https://img.shields.io/github/forks/devs-clan/devs-clan-site?style=social"> <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/devs-clan/devs-clan-site?style=social">
 
 <img src="https://img.shields.io/badge/project in process-darkgreen">  <img src="https://img.shields.io/badge/available to use-green">
 
