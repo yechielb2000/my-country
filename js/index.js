@@ -63,7 +63,7 @@ function submitForm(){
                 </div>
                 <div style="float:left;">
                   <img src="${flag}" alt="flag" style="width:200px;"><br>
-                  <button class="btn" onclick="downloadImage(${flag})" >download flag</button>
+                  <a download="flag.svg" href="${flag}"><button class="btn">download flag</button></a>
                 </div>
               </div>
               <div style="margin-bottom: 20px; margin-left: 20%; width: 60%; height: 500px;" id="mapContainer"></div>
@@ -80,14 +80,5 @@ function submitForm(){
   var platform = new H.service.Platform({'apikey': 'FQaJSL8jNzYUI4_3cuA96LrSd7tmC8UtcDX_-rrdvz0'});    
   var map = new H.Map(
       document.getElementById('mapContainer'),
-      platform.createDefaultLayers().vector.normal.map,{zoom: 20, center: { lat: varLat, lng: varLng }});
- }
-
- function downloadImage(flag){
-    var a = document.createElement('a');
-    a.href = flag;
-    a.download = "flag.svg";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+      platform.createDefaultLayers().vector.normal.map,{zoom: 7, center: { lat: varLat, lng: varLng }});
  }
