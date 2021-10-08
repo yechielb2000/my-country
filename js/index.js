@@ -3,8 +3,8 @@ var input = document.getElementById("search")
 var divResult = document.getElementById("result")
 var submit = document.getElementById('submit-button')
 
- // this api key is expired
- var platform = new H.service.Platform({'apikey': 'FQaJSL8jNzYUI4_3cuA96LrSd7tmC8UtcDX_-rrdvz0'});    
+// this api key is expired
+var platform = new H.service.Platform({'apikey': 'FQaJSL8jNzYUI4_3cuA96LrSd7tmC8UtcDX_-rrdvz0'});    
 
 submit.addEventListener("click", submitForm, false);
 
@@ -14,7 +14,6 @@ input.addEventListener("keyup", function(event) {
     submit.click();
   }
 });
-
 
 loadCss('../public/css/index.css')
 
@@ -52,18 +51,20 @@ function submitForm(){
               divResult.innerHTML =               
               `
               <div>
-                <div>
-                  <h3>${countryName}</h3>
-                  <h4>capital : ${capital}</h4>
-                  <h4>region : ${region}</h4>
-                </div>
                 <div style="float:left;">
-                  <img src="${flag}" alt="flag" style="width:200px;"><br>
-                  <a download="flag.svg" href="${flag}"><button class="btn">download flag</button></a>
+                  <div>
+                    <h3>${countryName}</h3>
+                    <h4>capital : ${capital}</h4>
+                    <h4>region : ${region}</h4>
+                  </div> 
+                  <div>
+                    <img src="${flag}" alt="flag" style="width:220px;"><br>
+                    <a download="flag.svg" href="${flag}"><button class="btn">download flag</button></a>
+                    <a target="_blank" href="${googleMaps}"><button class="btn">google maps</button></a>
+                  </div>
                 </div>
+                <div style="margin-bottom: 20px; margin-left: 20%; width: 1000px; height: 500px;" id="mapContainer"></div>
               </div>
-              <div style="margin-bottom: 20px; margin-left: 20%; width: 700px; height: 500px;" id="mapContainer"></div>
-              <a target="_blank" href="${googleMaps}"><button class="btn">google maps</button></a>
               `
               mapInit(latlng[0], latlng[1])
             }
@@ -80,8 +81,8 @@ function submitForm(){
     zoom: 7,
     pixelRatio: window.devicePixelRatio || 1
   });
+
   var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
-  var ui = H.ui.UI.createDefault(map, defaultLayers, 'en-US');
 
   map.addObject(new H.map.Rect(bounds, {
     style: {
@@ -92,7 +93,7 @@ function submitForm(){
     }
   ));
 
-  restrictMap(map);
+  restrictMap(map)
  }
 
  window.addEventListener('resize', function () {
@@ -123,4 +124,3 @@ function submitForm(){
     }
   });
 }
-
