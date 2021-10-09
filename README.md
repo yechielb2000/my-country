@@ -5,5 +5,5 @@
 
 <img src="images\my-country-flag.svg" width="220px" alt="&#x1F1EE;&#x1F1F1;">
 
-#### Find your <a href="yechielb2000.github.io/my-country/">country</a> !!
+<h2>Find your country !!</h2>
 
