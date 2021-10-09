@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,18 +11,17 @@
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
     <script>window.ENV_VARIABLE = 'developer.here.com'</script><script src='../iframeheight.js'></script>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
     <link rel="stylesheet" href="public/css/index.css" />
-    <title>countries</title>
+    <title>Countries</title>
 </head>
     <body>
-        <div>
-            <div>
-                <input type="search" class="item-space text-last-center item-size" id="search" /><br>
-                <button id="submit-button" class="item-space btn">Submit</button>
-            </div>
-        </div>
-        <div class="scale-items" id="result" style="margin-top: 20px;"></div>
-        </script>
+      <div>
+        <h2>Search a country</h2>
+        <input type="search" class="item-space text-last-center item-size" id="search" /><br>
+        <button id="submit-button" class="item-space btn">Submit</button>
+      </div>
+      <div class="scale-items" id="result" style="margin-top: 20px;"></div>
    </body>
 </html>
