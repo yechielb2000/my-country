@@ -4,17 +4,17 @@ var divResult = document.getElementById("result")
 var submit = document.getElementById('submit-button')
 
 const options = {
-  bottom: '24px', // default: '32px'
-  right: '32px', // default: '32px'
-  left: 'unset', // default: 'unset'
-  time: '0.5s', // default: '0.3s'
-  mixColor: '#fff', // default: '#fff'
-  backgroundColor: '#cfcccc',  // default: '#fff'
-  buttonColorDark: '#100f2c',  // default: '#100f2c'
-  buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies: true, // default: true,
-  label: '🌓', // default: ''
-  autoMatchOsTheme: true // default: true
+  bottom: '24px',
+  right: '32px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: '#fff',
+  backgroundColor: '#cfcccc',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff', 
+  saveInCookies: true, 
+  label: '🌓', 
+  autoMatchOsTheme: true 
 }
 
 const darkmode = new Darkmode(options);
@@ -85,6 +85,11 @@ function submitForm(){
               mapInit(latlng[0], latlng[1])
             }
           }      
+
+          if(!countryName){
+            alert('No country name found')
+          }
+        
       })
 }
 
