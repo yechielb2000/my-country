@@ -2,8 +2,16 @@ var map
 var input = document.getElementById("search")
 var divResult = document.getElementById("result")
 var submit = document.getElementById('submit-button')
+const platform = new H.service.Platform({'apikey': 'FQaJSL8jNzYUI4_3cuA96LrSd7tmC8UtcDX_-rrdvz0'});    
 
-const options = {
+const link = document.createElement('link')
+link.rel = 'stylesheet'
+link.href = '../public/css/index.css'
+
+
+submit.addEventListener("click", submitForm, false);
+
+const darkModeOptions = {
   bottom: '24px',
   right: '32px',
   left: 'unset',
@@ -17,12 +25,7 @@ const options = {
   autoMatchOsTheme: true 
 }
 
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
-
-var platform = new H.service.Platform({'apikey': 'FQaJSL8jNzYUI4_3cuA96LrSd7tmC8UtcDX_-rrdvz0'});    
-
-submit.addEventListener("click", submitForm, false);
+new Darkmode(darkModeOptions).showWidget();
 
 input.addEventListener("keyup", function(event) { 
   if (event.keyCode === 13) {
@@ -30,14 +33,7 @@ input.addEventListener("keyup", function(event) {
     submit.click();
   }
 });
-
-loadCss('../public/css/index.css')
-
-function loadCss(link){
-  var element = document.createElement('link')
-  element.rel = 'stylesheet'
-  element.href = link
-}
+  
 
 function submitForm(){
 
@@ -96,14 +92,14 @@ function submitForm(){
  function mapInit(varLat, varLng){
 
   var defaultLayers = platform.createDefaultLayers();
-  var map = new H.Map(document.getElementById('mapContainer'),
+  map = new H.Map(document.getElementById('mapContainer'),
     defaultLayers.vector.normal.map,{
     center: {lat:varLat, lng:varLng},
     zoom: 7,
     pixelRatio: window.devicePixelRatio || 1
   });
 
-  var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+  new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 
   map.addObject(new H.map.Rect(bounds, {
     style: {
@@ -119,7 +115,7 @@ function submitForm(){
 
  window.addEventListener('resize', function () {
    if(map){
-       map.getViewPort().resize()
+      map.getViewPort().resize()
    }
  })
 
