@@ -3,5 +3,6 @@
         "Darkmode",
         "latlng",
         "mapevents"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

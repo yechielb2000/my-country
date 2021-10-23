@@ -10,3 +10,42 @@
 .text-last-center{
     text-align-last: center;
 }
+
+.map-container{
+    margin-bottom: 20px; 
+    margin-left: 20%; 
+    width: 1000px; 
+    height: 500px;
+}
+
+.search-field{
+    width: 300px;
+}
+
+.country-info-div{
+    float: left;
+}
+
+@media screen and(max-width: 1210px){
+
+    .country-info-div{
+        float: none;
+    }
+
+    .search-field{
+        width: 90%;
+    }
+
+    .result-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .map-container{
+        width: 90vh;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
