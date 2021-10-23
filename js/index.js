@@ -33,7 +33,7 @@ input.addEventListener("keyup", function(event) {
     submit.click();
   }
 });
-  
+
 
 function submitForm(){
 
@@ -63,19 +63,19 @@ function submitForm(){
               divResult.innerHTML =               
               `
               <div>
-                <div style="float:left;">
+                <div class="country-info-div">
                   <div>
                     <h3>${countryName}</h3>
                     <h4>capital : ${capital}</h4>
                     <h4>region : ${region}</h4>
                   </div> 
-                  <div>
+                  <div style="margin-bottom:10px;">
                     <img src="${flag}" alt="flag" style="width:220px;"><br>
                     <a download="flag.svg" href="${flag}"><button class="btn">download flag</button></a>
                     <a target="_blank" href="${googleMaps}"><button class="btn">google maps</button></a>
                   </div>
                 </div>
-                <div style="margin-bottom: 20px; margin-left: 20%; width: 1000px; height: 500px;" id="mapContainer"></div>
+                <div class="map-container" id="mapContainer"></div>
               </div>
               `
               mapInit(latlng[0], latlng[1])
