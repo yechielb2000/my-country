@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/project%20name-my--country-orange"> <img alt="GitHub followers" src="https://img.shields.io/github/followers/yechielb2000?style=social"> <img src="https://img.shields.io/badge/project in process-darkgreen">  <img src="https://img.shields.io/badge/available to use-green">
+<img src="https://img.shields.io/badge/project in process-darkgreen">  <img src="https://img.shields.io/badge/project%20name-my--country-orange">   <img src="https://img.shields.io/badge/available to use-green">
 
 my-country
 =======
