@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/project in process-darkgreen">  <img src="https://img.shields.io/badge/project%20name-my--country-orange">   <img src="https://img.shields.io/badge/available to use-green">
+<img src="https://img.shields.io/badge/project in finished-white">  <img src="https://img.shields.io/badge/project%20name-my--country-blue"> <img src="https://img.shields.io/badge/available to use-white">
 
 my-country
 =======
